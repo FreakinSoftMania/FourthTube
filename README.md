@@ -1,29 +1,26 @@
-# ThirdTube
+# FourhTube
 
-A work-in-progress homebrew YouTube client for the 3DS  
-[GBAtemp Thread](https://gbatemp.net/threads/release-thirdtube-a-homebrew-youtube-client-for-the-new-3ds.591696/)  
+🗣 JOIN THE DISCORD WE FINNA FIX THIS
 [Discord Server](https://discord.gg/CVcThBCQJM)
 
 ## Instability Warning
 
-As this app is still in the alpha stage, you may and will encounter crashes and other bugs.  
-If you find one of those, it would be helpful to open an issue on this GitHub repository.  
+VERY
 
 ## Description
-It utilizes some undocumented YouTube APIs to get the raw video url and plays the stream using the decoder taken from [Video player for 3DS by Core-2-Extreme](https://github.com/Core-2-Extreme/Video_player_for_3DS).  
-It does not run any javascripts or render html/css, so it's significantly faster than YouTube on the browser.  
-The name is derived from the fact that it is the third YouTube client on 3DS, following the official YouTube app (discontinued) and the new 3DS browser.  
+
+Youtube on the 3ds, it's that shrimple 🍤
 
 ## QR code
-You can use the qr code below to download & install .cia from 3ds(Thanks @Minionguyjpro)
-<img src="https://github.com/windows-server-2003/ThirdTube/blob/main/images/qr_code.png" width="200" height="200">
+
+Not yet we cant even compile it smh 😭
 
 ## Screenshots
-<img src="https://github.com/windows-server-2003/ThirdTube/blob/main/images/0.jpg" width="400" height="480"> ![](https://github.com/windows-server-2003/ThirdTube/blob/main/images/1.bmp)  
-![](https://github.com/windows-server-2003/ThirdTube/blob/main/images/3.bmp) ![](https://github.com/windows-server-2003/ThirdTube/blob/main/images/4.bmp)  
+
+not yet
 
 ## Features
-
+ - **Broken**
  - Video Playback up to 360p  
    480p might be possible and could be considered in the future development
  - Livestreams and premiere videos support  
@@ -59,13 +56,15 @@ I haven't tested the minimum system version, but at least 8.1.0-0 is needed.
 
 ## FAQs
 
- - Does it make sense?  
-   The **worst** question in the console homebrew scene. Isn't it just exciting to see your favorite videos playing on a 3DS?
+ - why do we need a  new one?
+   - old one broke due to api changes
+ - How can i help?
+   - Join the discord
 
 ## Building
 You need:
 
- - devkitPro with devkitARM r58  
+ - devkitPro with devkitARM ~~r58~~  
  - ```3ds-zlib``` and ```3ds-mbedtls``` installed in portlibs of devkitPro  
    You can install it by opening devkitPro msys2 and typing ```pacman -S [package name]```.
 
@@ -105,5 +104,7 @@ by Sean Barrett under MIT License and Public Domain
 * The contributors of [youtube-dl](https://github.com/ytdl-org/youtube-dl)  
   As a reference about YouTube webpage parsing. It was especially helpful for the deobfuscation of ciphered signatures.  
 * The contributors of [pytube](https://github.com/pytube/pytube)  
-  As a reference about YouTube webpage parsing. Thanks to its strict dependency-free policy, I was able to port some of the code without difficulty.  
+  As a reference about YouTube webpage parsing. Thanks to its strict dependency-free policy, I was able to port some of the code without difficulty.
+* [Windows-Server-2003](https://github.com/windows-server-2003)
+  making the original and maintaining it for quite a  while
 
