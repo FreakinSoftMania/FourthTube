@@ -20,7 +20,7 @@ jobs:
     - name: Extract repository name
       run: |
         REPO_NAME="${{ github.repository }}"
-        echo "REPO_NAME_ONLY='${REPO_NAME##*/}'" >> $GITHUB_ENV
+        echo "REPO_NAME_ONLY=${REPO_NAME##*/}" >> $GITHUB_ENV
     - name: Upload binary
       uses: actions/upload-artifact@v3
       with:
