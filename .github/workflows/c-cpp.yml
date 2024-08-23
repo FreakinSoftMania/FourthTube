@@ -17,10 +17,14 @@ jobs:
     - uses: actions/checkout@v3
     - name: make
       run: make
+    - name: Extract and Print Repository Name
+      run: |
+        export REPO_NAME="${{ github.repository }}"
+        export REPO_NAME_ONLY="${REPO_NAME##*/}"
     - name: Upload binary
       uses: actions/upload-artifact@v3
       with:
         name: Build
         path: |
-          ThirdTube.3dsx
-          ThirdTube.cia
+          $REPO_NAME_ONLY.3dsx
+          $REPO_NAME_ONLY.cia
