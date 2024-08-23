@@ -26,5 +26,5 @@ jobs:
       with:
         name: Build
         path: |
-          $REPO_NAME_ONLY.3dsx
-          $REPO_NAME_ONLY.cia
+          ${REPO_NAME_ONLY}.3dsx
+          ${REPO_NAME_ONLY}.cia
