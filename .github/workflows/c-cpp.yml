@@ -20,11 +20,11 @@ jobs:
     - name: Extract and Print Repository Name
       run: |
         export REPO_NAME="${{ github.repository }}"
-        export REPO_NAME_ONLY="${REPO_NAME##*/}"
+        export REPO_NAME_ONLY="${REPO_NAME##*/}" >> $GITHUB_ENV
     - name: Upload binary
       uses: actions/upload-artifact@v3
       with:
         name: Build
         path: |
-          ${REPO_NAME_ONLY}.3dsx
-          ${REPO_NAME_ONLY}.cia
+          ${{ env.REPO_NAME_ONLY }}.3dsx
+          ${{ env.REPO_NAME_ONLY }}.cia
